@@ -6,7 +6,7 @@
 #include "SyncQueue.h"
 
 const int MaxTaskCount = 100;
-class TheadPool{
+class ThreadPool{
 
 public:
     using Task = std::function<void()>;
