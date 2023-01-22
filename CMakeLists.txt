@@ -16,7 +16,7 @@ SET(CMAKE_CXX_FLAGS_RELEASE "$ENV{CXXFLAGS} -O3 -Wall")
 
 find_package(Threads) ##引入外部依赖包
 
-add_executable(main)   ##这里的ThreadPool
+add_executable(main)   ##这里的ThreadPool(main)
 target_link_libraries (main ${CMAKE_THREAD_LIBS_INIT}) ##链接 Thread 库
 file(GLOB_RECURSE sources CONFIGURE_DEPENDS src/*.cpp src/*.h)
-target_sources(main PUBLIC ${sources})    ##和这里的ThreadPool全局唯一,是运行文件的名字 build/ThreadPool运行
+target_sources(main PUBLIC ${sources})    ##和这里的ThreadPool(main)全局唯一,是运行文件的名字 build/ThreadPool(main)运行

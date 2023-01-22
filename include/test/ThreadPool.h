@@ -10,11 +10,11 @@ class ThreadPool{
 
 public:
     using Task = std::function<void()>;
-    TheadPool(int numThreads = std::thread::hardware_concurrency()) : m_queue(MaxTaskCount){
+    ThreadPool(int numThreads = std::thread::hardware_concurrency()) : m_queue(MaxTaskCount){
         Start(numThreads);
     }
 
-    ~TheadPool(void){
+    ~ThreadPool(void){
         //如果没有停止时则主动停止线程池
         Stop();
     }
