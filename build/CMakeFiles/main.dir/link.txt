@@ -1,0 +1,1 @@
+/mnt/d/C++_compiler/LLVM/bin/clang++.exe   -O0 -Wall -g2 -ggdb   CMakeFiles/main.dir/src/test.cpp.o  -o main 

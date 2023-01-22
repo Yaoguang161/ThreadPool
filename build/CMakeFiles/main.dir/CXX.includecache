@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/limus/ThreadPool/include/test/test.h
+iostream
+-
+algorithm
+-
+
+/home/limus/ThreadPool/src/test.cpp
+../include/test/test.h
+/home/limus/ThreadPool/include/test/test.h
+

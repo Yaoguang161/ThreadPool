@@ -1,0 +1,3 @@
+/home/limus/ThreadPool/build/CMakeFiles/rebuild_cache.dir
+/home/limus/ThreadPool/build/CMakeFiles/edit_cache.dir
+/home/limus/ThreadPool/build/CMakeFiles/main.dir

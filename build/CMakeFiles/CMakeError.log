@@ -1,0 +1,17 @@
+Determining if the include file pthread.h exists failed with the following output:
+Change Dir: /home/limus/ThreadPool/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_1cf98/fast && /usr/bin/make -f CMakeFiles/cmTC_1cf98.dir/build.make CMakeFiles/cmTC_1cf98.dir/build
+make[1]: Entering directory '/home/limus/ThreadPool/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_1cf98.dir/CheckIncludeFile.cxx.o
+/mnt/d/C++_compiler/LLVM/bin/clang++.exe    -std=c++14 -o CMakeFiles/cmTC_1cf98.dir/CheckIncludeFile.cxx.o -c /home/limus/ThreadPool/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+/home/limus/ThreadPool/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:10: fatal error: 'pthread.h' file not found
+#include <pthread.h>
+         ^~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_1cf98.dir/build.make:66: CMakeFiles/cmTC_1cf98.dir/CheckIncludeFile.cxx.o] Error 1
+make[1]: Leaving directory '/home/limus/ThreadPool/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_1cf98/fast] Error 2
+
+
+

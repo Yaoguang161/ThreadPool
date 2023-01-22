@@ -1,0 +1,9 @@
+{
+    "clangd.arguments": [
+        "--compile-commands-dir=${workspaceFolder}/build",
+         "--query-driver=/usr/bin/clang,/usr/bin/c++", 
+         "--header-insertion=never"
+    ],
+    "clangd.checkUpdates": true,
+
+}
