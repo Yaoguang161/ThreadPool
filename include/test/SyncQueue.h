@@ -7,8 +7,6 @@
 #include<algorithm>
 using namespace std;
 template<typename T>
-using namespace std;
-template<typename T>
 class SyncQueue
 {
 
