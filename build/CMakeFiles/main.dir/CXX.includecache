@@ -6,13 +6,37 @@
 
 #IncludeRegexTransform: 
 
-/home/limus/ThreadPool/include/test/test.h
+/home/limus/ThreadPool/include/test/SyncQueue.h
 iostream
+-
+list
+-
+mutex
+-
+thread
+-
+condition_variable
 -
 algorithm
 -
 
+/home/limus/ThreadPool/include/test/ThreadPool.h
+list
+-
+thread
+-
+functional
+-
+memory
+-
+atomic
+-
+SyncQueue.h
+/home/limus/ThreadPool/include/test/SyncQueue.h
+
 /home/limus/ThreadPool/src/test.cpp
-../include/test/test.h
-/home/limus/ThreadPool/include/test/test.h
+../include/test/SyncQueue.h
+/home/limus/ThreadPool/include/test/SyncQueue.h
+../include/test/ThreadPool.h
+/home/limus/ThreadPool/include/test/ThreadPool.h
 

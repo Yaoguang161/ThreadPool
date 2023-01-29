@@ -18,5 +18,5 @@ find_package(Threads) ##引入外部依赖包
 
 add_executable(main)   ##这里的ThreadPool(main)
 target_link_libraries (main ${CMAKE_THREAD_LIBS_INIT}) ##链接 Thread 库
-file(GLOB_RECURSE sources CONFIGURE_DEPENDS src/*.cpp src/*.h)
+file(GLOB_RECURSE sources CONFIGURE_DEPENDS src/*.cpp include/*.h)
 target_sources(main PUBLIC ${sources})    ##和这里的ThreadPool(main)全局唯一,是运行文件的名字 build/ThreadPool(main)运行

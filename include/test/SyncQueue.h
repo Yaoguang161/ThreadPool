@@ -87,7 +87,7 @@ private:
         bool NotFull() const{
             bool full = m_queue.size() >= m_maxSize;
             if(full){
-                cout << "缓冲区满了 , 需要等待 ... " << endl;
+                cout << "缓冲区满了, 需要等待 ... " << endl;
             }
             return !full;
         }       
@@ -95,7 +95,7 @@ private:
         bool NotEmpty() const{
             bool empty = m_queue.empty();
             if(empty){
-                cout << "缓冲区空了 , 需要等待 ...异步层的缓存ID: " << this_thread::get_id() << endl;
+                cout << "缓冲区空了, 需要等待 ..., 异步层的缓存ID: " << this_thread::get_id() << endl;
             }
 
             return !empty;               
@@ -121,7 +121,7 @@ private:
     std::mutex m_mutex;                      //互斥量和条件变量结合起来使用
     std::condition_variable m_notEmpty;     //不为空的条件变量
     std::condition_variable m_notFull;      //没有满的条件变量
-    int m_maxSize;                          //同步队列最大的size
+    long unsigned int m_maxSize;                          //同步队列最大的size
             
     bool m_needStop;                        //停止的标志
 

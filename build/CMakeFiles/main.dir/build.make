@@ -60,15 +60,15 @@ include CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/test.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/test.cpp.o: ../src/test.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/limus/ThreadPool/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/main.dir/src/test.cpp.o"
-	/mnt/d/C++_compiler/LLVM/bin/clang++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/test.cpp.o -c /home/limus/ThreadPool/src/test.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/test.cpp.o -c /home/limus/ThreadPool/src/test.cpp
 
 CMakeFiles/main.dir/src/test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/test.cpp.i"
-	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CXX_CREATE_PREPROCESSED_SOURCE
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/limus/ThreadPool/src/test.cpp > CMakeFiles/main.dir/src/test.cpp.i
 
 CMakeFiles/main.dir/src/test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/test.cpp.s"
-	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CXX_CREATE_ASSEMBLY_SOURCE
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/limus/ThreadPool/src/test.cpp -o CMakeFiles/main.dir/src/test.cpp.s
 
 # Object files for target main
 main_OBJECTS = \
